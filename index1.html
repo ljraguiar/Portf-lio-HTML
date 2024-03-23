@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Pessoal - Lucas Aguiar</title>
+
+    <style>
+
+        body {
+            background-image: url('C:/Users/user/Desktop/Portfólio HTML/imagens/red-color-background-gradient-modern-design-abstract_343694-2153.avif');
+        }
+
+        header, footer{
+            background-color: rgb(90, 152, 106);
+            color: rgb(46, 69, 44);
+            border-radius: 20px;
+            margin: auto; 
+            width: 50%;
+            height: 40px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 90px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #56936a;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        .tab {
+            width: 100%;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .card p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .tab-content {
+            padding: 30px; 
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(105, 95, 95, 0.1);
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .tab-content h2 {
+            color: #333; 
+            font-size: 24px; 
+            margin-bottom: 20px; 
+        }
+
+        .tab-content p {
+            color: #555; 
+            font-size: 18px; 
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        caption{
+            margin-bottom: 20px; 
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }   
+
+
+        ul li {
+             margin-top: 15px;
+        }
+        .meu-paragrafo {
+            font-size: 16px;
+            color: rgba(0, 0, 0);
+            box-shadow: 0 4px 8px rgba(105, 95, 95, 0.1);
+            background-color: #59a573;
+            font-weight: bold;
+            border-radius: 20px;
+            line-height: 1.6;
+            position: absolute;
+            bottom: -370px; 
+            left: 50%;
+            transform: translateX(-50%); 
+        }
+
+    </style>
+
+    <script>
+        function showTab(tabId) {
+            var tabs = document.getElementsByClassName('tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = 'none';
+            }
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1> Meu Portfólio Pessoal - Lucas Aguiar</h1>
+    </header>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="active" onclick="showTab('tab1')">Sobre Mim</button>
+            <button onclick="showTab('tab2')">Experiências Profissionais</button>
+            <button onclick="showTab('tab3')">Movimento Pró Criança (MPC)</button>
+            <button onclick="showTab('tab4')">Contato</button>
+            <button onclick="showTab('tab5')">Cadastre-se</button>
+        </div>
+
+        
+    <section class = "tab-content">
+        <article id="tab1" class="tab active">
+            <div class="card">
+                <h2>Sobre Mim</h2>
+                <p>Me chamo Lucas Aguiar, tenho 25 anos, sou natural de Recife e atualmente estou estudando na
+                Universidade Católica de Pernambuco, cursando o 6º período.</p>
+                <img src="C:\Users\user\Desktop\Portfólio HTML\imagens\Imagem do WhatsApp de 2024-03-22 à(s) 19.32.38_17339482.jpg" alt="Minha-Foto" style="width: 40%; ">
+            </div>
+        </article>
+        
+        <div id="tab2" class="tab" style="display: none;">
+            <div class="card">
+                <h2>Experiências Profissionais</h2>
+                <p>● Já fui estagiário em um Centro de Formação da Prefeitura, a UTEC Cristiano Donato. 
+                 <br>Lá eu era responsável por Auxiliar na Manutenção, Suporte e Organização de Computadores,
+                 bem como em auxiliar em aulas de Tecnologia, Robótica e Introdução a Ciência da Computação
+                 ministradas a alunos da rede municipal de ensino.</p>
+                <p></p>
+                <p>● Atualmente estou estagiando em uma empresa chamada Pronto Tecnologia.
+                <br>Sou responsável por dar suporte em informática e desenvolvimento em informática, acompanhar acesso a banco de dados
+                SQL (PostgreSQL) e dar apoio na manutenção em páginas HTML, .PHP, JavaScript e Java.</p>    
+                <p></p>
+                <p> Em ambos estágios desempenhei funções relacionadas a área de Suporte de TI. </p>
+            </div>
+        </div>
+
+        <div id="tab3" class="tab" style="display: none;">
+            <img src="C:\Users\user\Desktop\Portfólio HTML\imagens\logo-mpc.svg" alt="Logo-Pro-Crianca" style="width: 20%; background-color: rgba(15, 14, 14, 0.9); border-radius: 10px;" >
+            <div class="card">
+                <h2>Movimento Pró Criança (MPC)</h2>
+                <table>
+                    <caption>Dados Importantes</caption>
+                    <thead>
+                        <tr>
+                            <th>Título do Dado Pesquisado</th>
+                            <th>Descrição</th>
+                            <th>Resultado da pesquisa</th>
+                            <th>Período</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Crianças e adolescentes acolhidos</td>
+                            <td>Crianças e adolescentes acolhidos pelo Movimento Pró-Criança em 2023</td>
+                            <td>530</td>
+                            <td>Jan/2023 a Jan/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Novos cadastros na plataforma</td>
+                            <td>Quantidade de novos cadastros de crianças e adolescentes em situação de vulnerabilidade no ano de 2023</td>
+                            <td>225</td>
+                            <td>Jan/2023 a Jan/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Doações Recebidas (Valores em dinheiro)</td>
+                            <td>Quantidade de doações em dinheiro recebidas no ano de 2023</td>
+                            <td>7.235</td>
+                            <td>Jan/2023 a Jan/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Doações Recebidas (Roupas e Alimentos)</td>
+                            <td>Quantidade de doações de roupas e alimentos recebidas no ano de 2023</td>
+                            <td>8.565</td>
+                            <td>Jan/2023 a Jan/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Vagas em cursos profissionalizantes</td>
+                            <td>Quantidade de vagas em cursos profissionalizantes ofertados pelo MPC preenchidas em 2023</td>
+                            <td>2.782</td>
+                            <td>Jan/2023 a Jan/2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class = "meu-paragrafo">
+                    O Projeto Pró-Criança é um projeto de alunos da Universidade Católica de Pernambuco 
+                    em parceria com o Movimento Pró-Criança em que o objetivo é otimizar uma plataforma online para que crianças e adolescentes
+                    em situação de vulnerabilidade tenham apoio e amparo. 
+                    O site que está sendo produzido pelos alunos da Católica ainda está em desenvolvimento.
+                </p>
+            </div>
+        </div>
+
+        <div id="tab4" class="tab">
+            <div class="card">
+                <h2>Contato</h2>
+                <caption><strong> Lucas Aguiar</strong></caption>
+                <p>Seguem meus contatos:</p>
+                <ul>
+                    <li><strong>E-mail:</strong> <a href="mailto:lucas.ribeiro.aguiar98@gmail.com"><img src="C:\Users\user\Desktop\Portfólio HTML\imagens\281769.png" alt="Ícone de E-mail" style = "width:3%;"></a></li>
+                    <li><strong>WhatsApp:</strong> <a href="https://wa.me/5581979003831"><img src="C:\Users\user\Desktop\Portfólio HTML\imagens\10000403.jpg" alt="Ícone de WhatsApp" style = "width:4%;"></a></li>
+                    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/ljraguiar/"><img src="C:\Users\user\Desktop\Portfólio HTML\imagens\174855.png" alt="Ícone de Instagram" style = "width:3%;"></a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lucas-aguiar-62a3b0189/"><img src="C:\Users\user\Desktop\Portfólio HTML\imagens\174857.png" alt="Ícone de LinkedIn" style = "width:3%;"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="tab5" class="tab">
+            <div class="card">
+                <h2>Cadastre-se para receber notícias do Movimento Pró Criança</h2>
+                <form action="formulario" method="post">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+        
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+        
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="tel" id="telefone" name="telefone"><br><br>
+        
+                    <label for="mensagem">Deixe aqui uma mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+        
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
