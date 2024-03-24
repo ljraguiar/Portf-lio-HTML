@@ -35,7 +35,7 @@
     - Imagem na seção sobre mim e Logos na seção do Movimento Pró-Criança (logo do MPC) e na seção Contato (Logos de Redes Sociais e Gmail)
 
 ### Estrutura do Repositório:
-- **index.html:** Arquivo HTML principal contendo a estrutura do portfólio e o código JavaScript para controle das abas.
-- **README.md:** Documento atual descrevendo o projeto e suas características.
+- **index.html:** Arquivo HTML principal contendo a estrutura do portfólio e o código em JavaScript para controle das seçoes.
+- **README.md:** Documento descrevendo o projeto e suas características.
 
 ---
